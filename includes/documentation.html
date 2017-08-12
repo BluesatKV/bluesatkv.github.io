@@ -23,18 +23,12 @@
         <span class="badge">v1.0.0</span>
         <h5 class="list-group-item-heading">url</h5>
         <p class="list-group-item-text">Link to server script <code>window.location.href</code></p>
-      </li>
-
-      <li class="list-group-item">
-        <span class="badge">v1.2.4</span>
-        <h5 class="list-group-item-heading">editmethod</h5>
-        <p class="list-group-item-text">Server request method for action 'edit' <code>post</code> or <code>get</code></p>
         <div class="m-t-20">
           <ul class="nav nav-tabs">
             <li class="active"><a href="#tab1" data-toggle="tab">Html</a></li>
-            <li><a href="#tab2" data-toggle="tab">JavaScript</a></li>
+            <li><a href="#tab1_1" data-toggle="tab">JavaScript</a></li>
           </ul>
-          <div id="myTabContent" class="tab-content">
+          <div class="tab-content">
             <div class="tab-pane fade active in" id="tab1">
              <pre class="prettyprint mh200">
 &lt;table class="table table-hover" id="my-table"&gt;
@@ -59,7 +53,56 @@
 &lt;/table&gt;
               </pre>
             </div>
-            <div class="tab-pane fade" id="tab2">
+            <div class="tab-pane fade" id="tab1_1">
+              <pre class="prettyprint">
+$('#my-table').Tabledit({
+  editmethod: 'post',
+  columns: {
+    identifier: [0, 'id'],
+    editable: [[1, 'col1'], [2, 'col1'], [3, 'col3'], [4, 'col4']]
+  }
+});
+              </pre>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li class="list-group-item">
+        <span class="badge">v1.2.4</span>
+        <h5 class="list-group-item-heading">editmethod</h5>
+        <p class="list-group-item-text">Server request method for action 'edit' <code>post</code> or <code>get</code></p>
+        <div class="m-t-20">
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab2" data-toggle="tab">Html</a></li>
+            <li><a href="#tab2_1" data-toggle="tab">JavaScript</a></li>
+          </ul>
+          <div id="" class="tab-content">
+            <div class="tab-pane fade active in" id="tab2">
+             <pre class="prettyprint mh200">
+&lt;table class="table table-hover" id="my-table"&gt;
+  &lt;thead&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Id&lt;/th&gt;
+    &lt;th&gt;Column 1&lt;/th&gt;
+    &lt;th&gt;Column 2&lt;/th&gt;
+    &lt;th&gt;Column 3&lt;/th&gt;
+    &lt;th&gt;Column 4&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;Data 1&lt;/td&gt;
+    &lt;td&gt;Data 2&lt;/td&gt;
+    &lt;td&gt;Data 3&lt;/td&gt;
+    &lt;td&gt;Data 4&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+              </pre>
+            </div>
+            <div class="tab-pane fade" id="tab2_1">
               <pre class="prettyprint">
 $('#my-table').Tabledit({
   editmethod: 'post',

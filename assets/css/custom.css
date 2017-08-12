@@ -105,7 +105,11 @@ footer .links a {
 /* Google-code-prettify
 ------------------------------------
 */
-pre.prettyprint.mh200{
+pre.prettyprint {
+  border: 0;
+}
+
+pre.prettyprint.mh200 {
   width: auto;
   overflow: auto;
   max-height: 200px
