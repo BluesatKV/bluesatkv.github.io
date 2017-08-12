@@ -106,13 +106,14 @@ footer .links a {
 ------------------------------------
 */
 pre.prettyprint {
-  border: 0;
+  border-radius: 0;
 }
 
 pre.prettyprint.mh200 {
   width: auto;
   overflow: auto;
-  max-height: 200px
+  height: 200px;
+  max-height: 200px;
 }
 
 /* Generic Padding Helpers
