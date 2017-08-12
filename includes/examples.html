@@ -62,7 +62,7 @@
         <div role="tabpanel" class="tab-pane fade" id="javascript1">
 <pre class="prettyprint">
 $('#example1').Tabledit({
-    url: 'https://www.bluesat.cz/_files/github/ajax/example.php',
+    url: 'ajax/example.json',
     columns: {
         identifier: [0, 'id'],
         editable: [[1, 'nickname'], [2, 'firstname'], [3, 'lastname']]
@@ -80,6 +80,7 @@ $('#example1').Tabledit({
     // Example #1
     $('#example1').Tabledit({
       url: 'ajax/example.json',
+      editmethod: 'get',
       columns: {
         identifier: [0, 'id'],
         editable: [[1, 'nickname'], [2, 'firstname'], [3, 'lastname']]
