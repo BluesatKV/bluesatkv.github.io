@@ -571,12 +571,57 @@ $('#my-table').Tabledit({
         <span class="badge">v1.0.0</span>
         <h5 class="list-group-item-heading">hideIdentifier</h5>
         <p class="list-group-item-text">Hide the column that has the identifier <code>false</code></p>
+        <div class="m-t-20">
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab12" data-toggle="tab">Html</a></li>
+            <li><a href="#tab12_1" data-toggle="tab">JavaScript</a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade active in" id="tab12">
+             <pre class="prettyprint mh200">
+&lt;table class="table table-hover" id="my-table"&gt;
+  &lt;thead&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Id&lt;/th&gt;
+    &lt;th&gt;Column 1&lt;/th&gt;
+    &lt;th&gt;Column 2&lt;/th&gt;
+    &lt;th&gt;Column 3&lt;/th&gt;
+    &lt;th&gt;Column 4&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;Data 1&lt;/td&gt;
+    &lt;td&gt;Data 2&lt;/td&gt;
+    &lt;td&gt;Data 3&lt;/td&gt;
+    &lt;td&gt;Data 4&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+              </pre>
+            </div>
+            <div class="tab-pane fade" id="tab12_1">
+              <pre class="prettyprint mh200">
+$('#my-table').Tabledit({
+  hideIdentifier: false,
+  columns: {
+    identifier: [0, 'id'],
+    editable: [[1, 'col1'], [2, 'col1'], [3, 'col3'], [4, 'col4']]
+  }
+});
+              </pre>
+            </div>
+          </div>
+        </div>
       </li>
+
       <li class="list-group-item">
         <span class="badge">v1.0.0</span>
-        <h5 class="list-group-item-heading">textSelection <span class="label label-danger">Deprecated</span></h5>
+        <h5 class="list-group-item-heading"><span style="text-decoration: line-through;">textSelection</span> <span class="label label-danger">Deprecated</span></h5>
         <p class="list-group-item-text">Enable text selection on editable columns <code>true</code></p>
       </li>
+      
       <li class="list-group-item">
         <span class="badge">v1.2.1</span>
         <h5 class="list-group-item-heading">autoFocus</h5>
