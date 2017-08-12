@@ -4,10 +4,10 @@
     <div class="page-header">
       <h3>Documentation</h3>
     </div>
+    <p>Basic version for jQuery-Tabledit by BluesatKV is v1.2.3 from <a href="https://github.com/markcell/jQuery-Tabledit" target="_blank">markcell</a>.</p>
     <div class="alert alert-info">
       <i class="fa fa-info-circle fa-lg"></i>&nbsp;
-      The following code to the description of each option is the default value.
-      Basic version for jQuery-Tabledit by BluesatKV is v1.2.3 from <a href="https://github.com/markcell/jQuery-Tabledit" target="_blank">markcell</a>. 
+      The following code to the description of each option is the default value. <br>
     </div>
   </div>
 </div>
@@ -22,6 +22,20 @@
         <span class="badge">v1.0.0</span>
         <h5 class="list-group-item-heading">url</h5>
         <p class="list-group-item-text">Link to server script <code>window.location.href</code></p>
+      </li>
+      <li class="list-group-item">
+        <span class="badge">v1.0.0</span>
+        <h5 class="list-group-item-heading">editmethod</h5>
+        <p class="list-group-item-text">Server request method for action 'edit' <code>post</code> or <code>get</code></p>
+        <pre class="prettyprint">
+$('#my-table').Tabledit({
+  editmethod: 'post',
+  columns: {
+    identifier: [0, 'id'],
+    editable: [[1, 'col1'], [2, 'col1'], [3, 'col3'], [4, 'col4']]
+  }
+});
+        </pre>
       </li>
       <li class="list-group-item">
         <span class="badge">v1.1.0</span>
