@@ -56,7 +56,7 @@
             <div class="tab-pane fade" id="tab1_1">
               <pre class="prettyprint">
 $('#my-table').Tabledit({
-  editmethod: 'post',
+  url: 'ajax/example.php',
   columns: {
     identifier: [0, 'id'],
     editable: [[1, 'col1'], [2, 'col1'], [3, 'col3'], [4, 'col4']]
@@ -77,7 +77,7 @@ $('#my-table').Tabledit({
             <li class="active"><a href="#tab2" data-toggle="tab">Html</a></li>
             <li><a href="#tab2_1" data-toggle="tab">JavaScript</a></li>
           </ul>
-          <div id="" class="tab-content">
+          <div class="tab-content">
             <div class="tab-pane fade active in" id="tab2">
              <pre class="prettyprint mh200">
 &lt;table class="table table-hover" id="my-table"&gt;
@@ -118,15 +118,150 @@ $('#my-table').Tabledit({
       </li>
 
       <li class="list-group-item">
+        <span class="badge">v1.2.4</span>
+        <h5 class="list-group-item-heading">deletemethod</h5>
+        <p class="list-group-item-text">Server request method for action 'delete' <code>post</code> or <code>get</code></p>
+        <div class="m-t-20">
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab3" data-toggle="tab">Html</a></li>
+            <li><a href="#tab3_1" data-toggle="tab">JavaScript</a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade active in" id="tab3">
+             <pre class="prettyprint mh200">
+&lt;table class="table table-hover" id="my-table"&gt;
+  &lt;thead&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Id&lt;/th&gt;
+    &lt;th&gt;Column 1&lt;/th&gt;
+    &lt;th&gt;Column 2&lt;/th&gt;
+    &lt;th&gt;Column 3&lt;/th&gt;
+    &lt;th&gt;Column 4&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;Data 1&lt;/td&gt;
+    &lt;td&gt;Data 2&lt;/td&gt;
+    &lt;td&gt;Data 3&lt;/td&gt;
+    &lt;td&gt;Data 4&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+              </pre>
+            </div>
+            <div class="tab-pane fade" id="tab3_1">
+              <pre class="prettyprint">
+$('#my-table').Tabledit({
+  deletemethod: 'post',
+  columns: {
+    identifier: [0, 'id'],
+    editable: [[1, 'col1'], [2, 'col1'], [3, 'col3'], [4, 'col4']]
+  }
+});
+              </pre>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li class="list-group-item">
         <span class="badge">v1.1.0</span>
         <h5 class="list-group-item-heading">inputClass</h5>
         <p class="list-group-item-text">Class for form inputs <code>'form-control input-sm'</code></p>
+        <div class="m-t-20">
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab4" data-toggle="tab">Html</a></li>
+            <li><a href="#tab4_1" data-toggle="tab">JavaScript</a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade active in" id="tab4">
+             <pre class="prettyprint mh200">
+&lt;table class="table table-hover" id="my-table"&gt;
+  &lt;thead&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Id&lt;/th&gt;
+    &lt;th&gt;Column 1&lt;/th&gt;
+    &lt;th&gt;Column 2&lt;/th&gt;
+    &lt;th&gt;Column 3&lt;/th&gt;
+    &lt;th&gt;Column 4&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;Data 1&lt;/td&gt;
+    &lt;td&gt;Data 2&lt;/td&gt;
+    &lt;td&gt;Data 3&lt;/td&gt;
+    &lt;td&gt;Data 4&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+              </pre>
+            </div>
+            <div class="tab-pane fade" id="tab4_1">
+              <pre class="prettyprint">
+$('#my-table').Tabledit({
+  inputClass: 'form-control input-sm',
+  columns: {
+    identifier: [0, 'id'],
+    editable: [[1, 'col1'], [2, 'col1'], [3, 'col3'], [4, 'col4']]
+  }
+});
+              </pre>
+            </div>
+          </div>
+        </div>
       </li>
 
       <li class="list-group-item">
         <span class="badge">v1.2.0</span>
         <h5 class="list-group-item-heading">toolbarClass</h5>
         <p class="list-group-item-text">Class for buttons toolbar <code>'btn-toolbar'</code></p>
+        <div class="m-t-20">
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab5" data-toggle="tab">Html</a></li>
+            <li><a href="#tab5_1" data-toggle="tab">JavaScript</a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane fade active in" id="tab5">
+             <pre class="prettyprint mh200">
+&lt;table class="table table-hover" id="my-table"&gt;
+  &lt;thead&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Id&lt;/th&gt;
+    &lt;th&gt;Column 1&lt;/th&gt;
+    &lt;th&gt;Column 2&lt;/th&gt;
+    &lt;th&gt;Column 3&lt;/th&gt;
+    &lt;th&gt;Column 4&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;Data 1&lt;/td&gt;
+    &lt;td&gt;Data 2&lt;/td&gt;
+    &lt;td&gt;Data 3&lt;/td&gt;
+    &lt;td&gt;Data 4&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+              </pre>
+            </div>
+            <div class="tab-pane fade" id="tab5_1">
+              <pre class="prettyprint">
+$('#my-table').Tabledit({
+  toolbarClass: 'btn-toolbar',
+  columns: {
+    identifier: [0, 'id'],
+    editable: [[1, 'col1'], [2, 'col1'], [3, 'col3'], [4, 'col4']]
+  }
+});
+              </pre>
+            </div>
+          </div>
+        </div>
       </li>
 
       <li class="list-group-item">
