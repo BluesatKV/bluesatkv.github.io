@@ -39,9 +39,13 @@
      * @requires nothing
      */
 
-    $('#themes a.dropdown-item').on('click', function(event) {
-        event.preventDefault();
+    $('#themes-select').on('click', function(event) {
+
         $('head link#theme-file').attr('href', $(this).attr('href'));
+
+        // prevent the default anchor functionality
+        event.preventDefault();
+        return false;
     });
 </script>
 </body>
