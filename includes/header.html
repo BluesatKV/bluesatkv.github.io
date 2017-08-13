@@ -29,11 +29,11 @@
           <a id="themes" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">Theme &nbsp;<span class="caret"></span></a>
           <div id="themes-select" class="dropdown-menu" aria-labelledby="themes">
             <a class="dropdown-item" href="#" data-href="assets/css/skins/bootstrapv4/bootstrapv4-cosmo">Default</a>
-            <a class="dropdown-item" href="assets/css/skins/bootstrapv4/bootstrapv4-lumen.min.css">Lumen</a>
-            <a class="dropdown-item" href="assets/css/skins/bootstrapv4/bootstrapv4-minty.min.css">Minty</a>
-            <a class="dropdown-item" href="assets/css/skins/bootstrapv4/bootstrapv4-sandstone.min.css">Sandstone</a>
-            <a class="dropdown-item" href="assets/css/skins/bootstrapv4/bootstrapv4-simplex.min.css">Simplex</a>
-            <a class="dropdown-item" href="assets/css/skins/bootstrapv4/bootstrapv4-yeti.min.css">Yeti</a>
+            <a class="dropdown-item" href="#" data-href="assets/css/skins/bootstrapv4/bootstrapv4-lumen">Lumen</a>
+            <a class="dropdown-item" href="#" data-href="assets/css/skins/bootstrapv4/bootstrapv4-minty">Minty</a>
+            <a class="dropdown-item" href="#" data-href="assets/css/skins/bootstrapv4/bootstrapv4-sandstone">Sandstone</a>
+            <a class="dropdown-item" href="#" data-href="assets/css/skins/bootstrapv4/bootstrapv4-simplex">Simplex</a>
+            <a class="dropdown-item" href="#" data-href="assets/css/skins/bootstrapv4/bootstrapv4-yeti">Yeti</a>
           </div>
         </li>
         <li class="nav-item">
@@ -50,7 +50,7 @@
       // prevent the default anchor functionality
       event.preventDefault();
 
-      $href = $(this).attr('href');
+      $href = $(this).attr('data-href');
 
       $('head link#theme-file').attr('href', $href + '.css');
       $('head link#custom-theme-file').attr('href', $href + '-custom.css');
