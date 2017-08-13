@@ -33,5 +33,11 @@
 <script src="assets/js/prettify.min.js"></script>
 <script src="assets/js/tabledit.min.js"></script>
 <script src="assets/js/custom.js"></script>
+<script>
+    $('#theme-button ul li a').on('click', function(event) {
+        event.preventDefault();
+        $('#theme-file').attr('href', $(this).attr('href'));
+    });
+</script>
 </body>
 </html>
