@@ -6,6 +6,10 @@
   border-radius: 0;
 }
 
+footer {
+  margin: 2em 0;
+}
+
 footer li {
   float: left;
   margin-right: 1.5em;
