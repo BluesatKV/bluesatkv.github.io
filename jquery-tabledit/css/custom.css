@@ -44,6 +44,7 @@ footer li {
 */
 pre.prettyprint {
   border-radius: 0;
+  font-size: 0.8em;
 }
 
 pre.prettyprint.mh200 {
