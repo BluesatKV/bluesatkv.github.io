@@ -46,3 +46,13 @@
     </div>
   </div>
 </div>
+
+<script>
+  $(document).ready(function () {
+    $('#themes-select').click(function (event) {
+      event.preventDefault();
+      alert($(this).attr('href'));
+    });
+
+  });
+</script>
