@@ -222,7 +222,7 @@ $('#my-table').Tabledit({
               </div>
             </li>
 
-            <li class="list-group-item">
+            <li class="list-group-item" id="toolbarClass">
               <span class="badge">v1.2.0</span>
               <h5 class="list-group-item-heading">toolbarClass</h5>
               <p class="list-group-item-text">Class for buttons toolbar <code>'btn-toolbar'</code></p>
@@ -271,7 +271,7 @@ $('#my-table').Tabledit({
               </div>
             </li>
 
-            <li class="list-group-item">
+            <li class="list-group-item" id="groupClass">
               <span class="badge">v1.2.0</span>
               <h5 class="list-group-item-heading">groupClass</h5>
               <p class="list-group-item-text">Class for buttons group <code>'btn-group btn-group-sm'</code></p>
@@ -320,7 +320,7 @@ $('#my-table').Tabledit({
               </div>
             </li>
 
-            <li class="list-group-item">
+            <li class="list-group-item" id="dangerClass">
               <span class="badge">v1.1.0</span>
               <h5 class="list-group-item-heading">dangerClass</h5>
               <p class="list-group-item-text">Class for row when ajax request fails <code>'danger'</code></p>
@@ -369,7 +369,7 @@ $('#my-table').Tabledit({
               </div>
             </li>
 
-            <li class="list-group-item">
+            <li class="list-group-item" id="warningClass">
               <span class="badge">v1.1.0</span>
               <h5 class="list-group-item-heading">warningClass</h5>
               <p class="list-group-item-text">Class for row when save changes <code>'warning</code></p>
@@ -418,7 +418,7 @@ $('#my-table').Tabledit({
               </div>
             </li>
 
-            <li class="list-group-item">
+            <li class="list-group-item" id="mutedClass">
               <span class="badge">v1.1.0</span>
               <h5 class="list-group-item-heading">mutedClass</h5>
               <p class="list-group-item-text">Class for row when is deleted <code>'muted'</code></p>
@@ -1196,59 +1196,20 @@ $('#my-table').Tabledit({
                   <a href="#inputClass">InputClass</a>
                 </li>
                 <li>
-                  <a href="#data">Loading data from an array</a>
+                  <a href="#toolbarClass">ToolbarClass</a>
                 </li>
                 <li>
-                  <a href="#ajax">Connecting to a remote data source</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#selections">Displaying selections</a>
-              <ul class="nav">
-                <li>
-                  <a href="#placeholder">Showing a placeholder</a>
+                  <a href="#groupClass">GroupClass</a>
                 </li>
                 <li>
-                  <a href="#allowClear">Clearing selections</a>
+                  <a href="#dangerClass">DangerClass</a>
                 </li>
                 <li>
-                  <a href="#templateSelection">Templating</a>
+                  <a href="#warningClass">WarningClass</a>
                 </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#results">Displaying results</a>
-              <ul class="nav">
-                <li><a href="#can-i-change-when-search-results-are-loaded">Controlling result loading</a></li>
-                <li><a href="#can-i-change-how-selecting-results-works">Making selections</a></li>
-                <li><a href="#can-i-change-how-the-dropdown-is-placed">Placement</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#events">Events</a>
-              <ul class="nav">
-                <li><a href="#events-public">Public jQuery events</a></li>
-                <li><a href="#events-internal">Internal events</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#adapters">The plugin system (adapters)</a>
-              <ul class="nav">
-                <li><a href="#adapters-all">All adapters</a></li>
-                <li><a href="#selectionAdapter">Container (selection)</a></li>
-                <li><a href="#dataAdapter">Data set</a></li>
-                <li><a href="#dropdownAdapter">Dropdown</a></li>
-                <li><a href="#resultsAdapter">Results</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#backwards-compatibility">Deprecated options</a>
-              <ul class="nav">
-                <li><a href="#compat-matcher">Simplified function for matching data objects</a></li>
-                <li><a href="#initSelection">Old initial selections with <code>initSelection</code></a></li>
-                <li><a href="#query">Querying old data with <code>query</code></a></li>
-                <li><a href="#input-fallback">Compatibility with <code>&lt;input type="text" /&gt;</code></a></li>
+                <li>
+                  <a href="#mutedClass">MutedClass</a>
+                </li>
               </ul>
             </li>
           </ul>
