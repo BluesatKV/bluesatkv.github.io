@@ -33,5 +33,16 @@
 <script src="assets/js/prettify.min.js"></script>
 <script src="assets/js/tabledit.min.js"></script>
 <script src="assets/js/custom.js"></script>
+<script>
+    /** @function Change theme
+     * @description Change theme on click by button
+     * @requires nothing
+     */
+
+    $('#theme-select a.dropdown-item').on('click', function(event) {
+        event.preventDefault();
+        $('head link#theme-file').attr('href', $(this).attr('href'));
+    });
+</script>
 </body>
 </html>

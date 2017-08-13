@@ -29,14 +29,4 @@
   $('header').load('includes/header.html');
   $('footer').load('includes/footer.html');
 
-  /** @function Change theme
-   * @description Change theme on click by button
-   * @requires nothing
-   */
-
-  $('#theme-select a.dropdown-item').on('click', function(event) {
-    event.preventDefault();
-    $('head link#theme-file').attr('href', $(this).attr('href'));
-  });
-
 })(window.jQuery);
