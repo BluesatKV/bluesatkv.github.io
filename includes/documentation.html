@@ -1129,6 +1129,7 @@ $('#my-table').Tabledit({
               <h5 class="list-group-item-heading"><span style="text-decoration: line-through;">removeButton</span> <span class="label label-danger">Deprecated</span></h5>
               <p class="list-group-item-text">Activate remove button <code>true</code></p>
             </li>
+            
           </ul>
         </div>
       </div>
@@ -1139,40 +1140,46 @@ $('#my-table').Tabledit({
             <h4>Hooks</h4>
           </div>
           <ul class="list-group">
-            <li class="list-group-item">
+            <li class="list-group-item" id="onDraw">
               <span class="badge">v1.0.0</span>
               <h5 class="list-group-item-heading">onDraw()</h5>
               <p class="list-group-item-text">Executed after draw the structure</p>
             </li>
-            <li class="list-group-item">
-              <span class="badge">v1.0.0</span>
-              <h5 class="list-group-item-heading"><span style="text-decoration: line-through;">onComplete(response)</span> <span class="label label-danger">Deprecated</span></h5>
-              <p class="list-group-item-text">Executed when the ajax request is completed</p>
-            </li>
-            <li class="list-group-item">
+
+            <li class="list-group-item" id="onSuccess">
               <span class="badge">v1.1.0</span>
               <h5 class="list-group-item-heading">onSuccess(data, textStatus, jqXHR)</h5>
               <p class="list-group-item-text">Executed when the ajax request is completed</p>
             </li>
+
+            <li class="list-group-item" id="onFail">
+              <span class="badge">v1.1.0</span>
+              <h5 class="list-group-item-heading">onFail(jqXHR, textStatus, errorThrown)</h5>
+              <p class="list-group-item-text">Executed when occurred an error on ajax request</p>
+            </li>
+
+            <li class="list-group-item" id="onAlways">
+              <span class="badge">v1.1.0</span>
+              <h5 class="list-group-item-heading">onAlways()</h5>
+              <p class="list-group-item-text">Executed whenever there is an ajax request</p>
+            </li>
+
+            <li class="list-group-item" id="onAjax">
+              <span class="badge">v1.2.1</span>
+              <h5 class="list-group-item-heading">onAjax(action, serialize)</h5>
+              <p class="list-group-item-text">Executed before the ajax request <span class="label label-info">If returns false, does not send the ajax request. (v1.2.2)</span></p>
+            </li>
+
             <li class="list-group-item">
               <span class="badge">v1.0.0</span>
               <h5 class="list-group-item-heading"><span style="text-decoration: line-through;">onError()</span> <span class="label label-danger">Deprecated</span></h5>
               <p class="list-group-item-text">Executed when occurred an error on ajax request</p>
             </li>
+
             <li class="list-group-item">
-              <span class="badge">v1.1.0</span>
-              <h5 class="list-group-item-heading">onFail(jqXHR, textStatus, errorThrown)</h5>
-              <p class="list-group-item-text">Executed when occurred an error on ajax request</p>
-            </li>
-            <li class="list-group-item">
-              <span class="badge">v1.1.0</span>
-              <h5 class="list-group-item-heading">onAlways()</h5>
-              <p class="list-group-item-text">Executed whenever there is an ajax request</p>
-            </li>
-            <li class="list-group-item">
-              <span class="badge">v1.2.1</span>
-              <h5 class="list-group-item-heading">onAjax(action, serialize)</h5>
-              <p class="list-group-item-text">Executed before the ajax request <span class="label label-info">If returns false, does not send the ajax request. (v1.2.2)</span></p>
+              <span class="badge">v1.0.0</span>
+              <h5 class="list-group-item-heading"><span style="text-decoration: line-through;">onComplete(response)</span> <span class="label label-danger">Deprecated</span></h5>
+              <p class="list-group-item-text">Executed when the ajax request is completed</p>
             </li>
           </ul>
         </div>
@@ -1270,6 +1277,18 @@ $('#my-table').Tabledit({
                 <li><a href="#confirmText">ConfirmText</a></li>
                 <li><a href="#textSelection">TextSelection</a></li>
                 <li><a href="#removeButton">RemoveButton</a></li>
+              </ul>
+            </li>
+
+            <li><h5 class="sidebar-header">Hooks</h5></li>
+            <li>
+              <a href="#onDraw">Hooks</a>
+              <ul class="nav">
+                <li><a href="#onDraw">onDraw()</a></li>
+                <li><a href="#onSuccess">onSuccess()</a></li>
+                <li><a href="#onFail">onFail()</a></li>
+                <li><a href="#onAlways">onAlways()</a></li>
+                <li><a href="#onAjax">onAjax()</a></li>
               </ul>
             </li>
 
