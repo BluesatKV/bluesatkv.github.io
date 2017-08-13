@@ -6,6 +6,10 @@
   border-radius: 0;
 }
 
+.page-header {
+  margin: 0 0 21px 0;
+  border-bottom: 1px solid #dddddd;
+}
 
 footer li {
   float: left;
