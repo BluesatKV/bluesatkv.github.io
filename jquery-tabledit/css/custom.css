@@ -39,6 +39,10 @@ footer li {
   font-size: 0.9em;
 }
 
+table[id^="example"] tbody tr td {
+  vertical-align: middle;
+}
+
 /* Google-code-prettify
 ------------------------------------
 */
