@@ -16,9 +16,9 @@
   <div class="row">
     <div class="col-sm-12">
       <div class="page-header">
-        <h4>Example #2</h4>
+        <h4>Example #3</h4>
       </div>
-      <p class="help-block">Inline edit like a spreadsheet on two columns only and without identifier column.</p>
+      <p class="help-block">Inline edit like a spreadsheet, toolbar column with edit button only and without focus on first input.</p>
 
       <div class="m-t-20">
         <!-- Nav tabs -->
@@ -32,13 +32,13 @@
         <div class="tab-content">
           <div class="tab-pane fade in active" id="tab">
             <div class="table-responsive">
-              <table class="table table-striped table-bordered" id="example2">
+              <table class="table table-striped table-bordered" id="example3">
                 <thead>
                 <tr>
-                  <th class="col-sm-1">#</th>
-                  <th class="col-sm-4">Nickname</th>
-                  <th class="col-sm-3">Firstname</th>
-                  <th class="col-sm-4">Lastname</th>
+                  <th>#</th>
+                  <th>Nickname</th>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -69,10 +69,10 @@
 &lt;table class="table table-striped table-bordered" id="example1"&gt;
   &lt;thead&gt;
   &lt;tr&gt;
-    &lt;th class="col-sm-1"&gt;#&lt;/th&gt;
-    &lt;th class="col-sm-4"&gt;Nickname&lt;/th&gt;
-    &lt;th class="col-sm-3"&gt;Firstname&lt;/th&gt;
-    &lt;th class="col-sm-4"&gt;Lastname&lt;/th&gt;
+    &lt;th&gt;#&lt;/th&gt;
+    &lt;th&gt;Nickname&lt;/th&gt;
+    &lt;th&gt;Firstname&lt;/th&gt;
+    &lt;th&gt;Lastname&lt;/th&gt;
   &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -100,11 +100,11 @@
           </div>
           <div class="tab-pane fade" id="tab2">
 <pre class="prettyprint linenums">
-$('#example2').Tabledit({
+$('#example3').Tabledit({
   url: 'ajax/example.php',
-  editButton: false,
   deleteButton: false,
-  hideIdentifier: true,
+  saveButton: false,
+  autoFocus: false,
   columns: {
       identifier: [0, 'id'],
       editable: [[1, 'nickname'], [2, 'firstname'], [3, 'lastname']]
@@ -169,12 +169,12 @@ echo json_encode($input);
 
 <script>
   $(document).ready(function() {
-    // Example #2
-    $('#example2').Tabledit({
+    // Example #3
+    $('#example3').Tabledit({
       url: 'ajax/example.php',
-      editButton: false,
       deleteButton: false,
-      hideIdentifier: true,
+      saveButton: false,
+      autoFocus: false,
       columns: {
         identifier: [0, 'id'],
         editable: [[1, 'nickname'], [2, 'firstname'], [3, 'lastname']]

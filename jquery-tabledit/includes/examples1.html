@@ -35,10 +35,10 @@
               <table class="table table-striped table-bordered" id="example1">
                 <thead>
                 <tr>
-                  <th>#</th>
-                  <th>Nickname</th>
-                  <th>Firstname</th>
-                  <th>Lastname</th>
+                  <th class="col-sm-1">#</th>
+                  <th class="col-sm-4">Nickname</th>
+                  <th class="col-sm-3">Firstname</th>
+                  <th class="col-sm-4">Lastname</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -69,10 +69,10 @@
 &lt;table class="table table-striped table-bordered" id="example1"&gt;
   &lt;thead&gt;
   &lt;tr&gt;
-    &lt;th&gt;#&lt;/th&gt;
-    &lt;th&gt;Nickname&lt;/th&gt;
-    &lt;th&gt;Firstname&lt;/th&gt;
-    &lt;th&gt;Lastname&lt;/th&gt;
+    &lt;th class="col-sm-1"&gt;#&lt;/th&gt;
+    &lt;th class="col-sm-4"&gt;Nickname&lt;/th&gt;
+    &lt;th class="col-sm-3"&gt;Firstname&lt;/th&gt;
+    &lt;th class="col-sm-4"&gt;Lastname&lt;/th&gt;
   &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -101,13 +101,13 @@
           <div class="tab-pane fade" id="tab2">
 <pre class="prettyprint linenums">
 $('#example1').Tabledit({
-    url: 'ajax/example.php',
-    eventType: 'dblclick',
-    editButton: false,
-    columns: {
-        identifier: [0, 'id'],
-        editable: [[1, 'nickname'], [2, 'firstname'], [3, 'lastname']]
-    }
+  url: 'ajax/example.php',
+  eventType: 'dblclick',
+  editButton: false,
+  columns: {
+      identifier: [0, 'id'],
+      editable: [[1, 'nickname'], [2, 'firstname'], [3, 'lastname']]
+  }
 });
 </pre>
           </div>

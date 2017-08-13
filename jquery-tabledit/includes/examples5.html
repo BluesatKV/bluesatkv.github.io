@@ -16,29 +16,30 @@
   <div class="row">
     <div class="col-sm-12">
       <div class="page-header">
-        <h4>Example #2</h4>
+        <h4>Example #5</h4>
       </div>
-      <p class="help-block">Inline edit like a spreadsheet on two columns only and without identifier column.</p>
+      <p class="help-block">Add toolbar column with EDIT and DELETE buttons and settings of language.</p>
 
       <div class="m-t-20">
         <!-- Nav tabs -->
         <ul class="nav nav-tabs">
           <li class="active"><a href="#tab" data-toggle="tab">Table</a></li>
           <li><a href="#tab1" data-toggle="tab">Html</a></li>
-          <li><a href="#tab2" data-toggle="tab">JavaScript</a></li>
-          <li><a href="#tab3" data-toggle="tab">PHP</a></li>
+          <li><a href="#tab2" data-toggle="tab">JavaScript 1</a></li>
+          <li><a href="#tab3" data-toggle="tab">JavaScript 2</a></li>
+          <li><a href="#tab4" data-toggle="tab">PHP</a></li>
         </ul>
         <!-- Tab panes -->
         <div class="tab-content">
           <div class="tab-pane fade in active" id="tab">
             <div class="table-responsive">
-              <table class="table table-striped table-bordered" id="example2">
+              <table class="table table-striped table-bordered" id="example5">
                 <thead>
                 <tr>
-                  <th class="col-sm-1">#</th>
-                  <th class="col-sm-4">Nickname</th>
-                  <th class="col-sm-3">Firstname</th>
-                  <th class="col-sm-4">Lastname</th>
+                  <th>#</th>
+                  <th>Nickname</th>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -69,10 +70,10 @@
 &lt;table class="table table-striped table-bordered" id="example1"&gt;
   &lt;thead&gt;
   &lt;tr&gt;
-    &lt;th class="col-sm-1"&gt;#&lt;/th&gt;
-    &lt;th class="col-sm-4"&gt;Nickname&lt;/th&gt;
-    &lt;th class="col-sm-3"&gt;Firstname&lt;/th&gt;
-    &lt;th class="col-sm-4"&gt;Lastname&lt;/th&gt;
+    &lt;th&gt;#&lt;/th&gt;
+    &lt;th&gt;Nickname&lt;/th&gt;
+    &lt;th&gt;Firstname&lt;/th&gt;
+    &lt;th&gt;Lastname&lt;/th&gt;
   &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -100,11 +101,9 @@
           </div>
           <div class="tab-pane fade" id="tab2">
 <pre class="prettyprint linenums">
-$('#example2').Tabledit({
+$('#example5').Tabledit({
   url: 'ajax/example.php',
-  editButton: false,
-  deleteButton: false,
-  hideIdentifier: true,
+  lang: 'cz',
   columns: {
       identifier: [0, 'id'],
       editable: [[1, 'nickname'], [2, 'firstname'], [3, 'lastname']]
@@ -113,6 +112,18 @@ $('#example2').Tabledit({
 </pre>
           </div>
           <div class="tab-pane fade" id="tab3">
+<pre class="prettyprint linenums">
+$('#example5').Tabledit({
+  url: 'ajax/example.php',
+  lang: 'CZ',
+  columns: {
+      identifier: [0, 'id'],
+      editable: [[1, 'nickname'], [2, 'firstname'], [3, 'lastname']]
+  }
+});
+</pre>
+          </div>
+          <div class="tab-pane fade" id="tab4">
 <pre class="prettyprint linenums">
 &lt;?php
 
@@ -169,12 +180,10 @@ echo json_encode($input);
 
 <script>
   $(document).ready(function() {
-    // Example #2
-    $('#example2').Tabledit({
+    // Example #5
+    $('#example5').Tabledit({
       url: 'ajax/example.php',
-      editButton: false,
-      deleteButton: false,
-      hideIdentifier: true,
+      lang: 'cz',
       columns: {
         identifier: [0, 'id'],
         editable: [[1, 'nickname'], [2, 'firstname'], [3, 'lastname']]

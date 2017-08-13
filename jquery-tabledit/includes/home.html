@@ -111,4 +111,34 @@
     <div class="clearfix"></div>
   </div>
 
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="page-header">
+        <h4>Getting started with Select2</h4>
+      </div>
+      <p><strong>1. </strong>Download Jquery-Tabledit</p>
+      <p><strong>2. </strong>Include the following lines of code in the your HTML. </p>
+      <p><code>&lt;script src="your_folder_with_jquery-tabledit/jquery.tabledit.js"&gt;&lt;/script&gt;</code></p>
+      <p><strong>3. </strong>Initialize Jquery Tabledit on the <code>&lt;table id="my_table"&gt;</code> element that you want</p>
+<pre class="prettyprint linenums">
+$('#my_table').Tabledit({
+  url: 'ajax/example.php',
+  columns: {
+      identifier: [0, 'id'],
+      editable: [[1, 'nickname'], [2, 'firstname'], [3, 'lastname']]
+  }
+});
+</pre>
+      <p><strong>4. </strong>Check out the <a href="#examples">examples page</a> to start using the additional features of Jquery-Tabledit.</p>
+    </div>
+  </div>
+
 </div>
+
+<script>
+  $(document).ready(function() {
+
+    prettyPrint();
+
+  });
+</script>
