@@ -1,48 +1,48 @@
-<div class="navbar navbar-toggleable-md fixed-top navbar-inverse bg-primary">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <a href="#home" class="navbar-brand">jQuery-Tabledit by BluesatKV</a>
-      <ul class="navbar-nav">
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="example">Examples<span class="caret"></span></a>
-          <div class="dropdown-menu" aria-labelledby="example">
-            <a class="dropdown-item" href="#examples">Default</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#examples1">Example #1</a>
-            <a class="dropdown-item" href="#examples2">Example #2</a>
-            <a class="dropdown-item" href="#examples3">Example #3</a>
-            <a class="dropdown-item" href="#examples4">Example #4</a>
-            <a class="dropdown-item" href="#examples5">Example #5</a>
-            <a class="dropdown-item" href="#examples6">Example #6</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#documentation">Documentation</a>
-        </li>
-      </ul>
 
-      <ul class="nav navbar-nav ml-auto">
-        <li class="nav-item dropdown">
-          <a id="themes" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">Theme &nbsp;<span class="caret"></span></a>
-          <div id="themes-select" class="dropdown-menu" aria-labelledby="themes">
-            <a class="dropdown-item" href="#" data-href="assets/css/skins/bootstrapv4/bootstrapv4-cosmo">Default</a>
-            <a class="dropdown-item" href="#" data-href="assets/css/skins/bootstrapv4/bootstrapv4-lumen">Lumen</a>
-            <a class="dropdown-item" href="#" data-href="assets/css/skins/bootstrapv4/bootstrapv4-minty">Minty</a>
-            <a class="dropdown-item" href="#" data-href="assets/css/skins/bootstrapv4/bootstrapv4-sandstone">Sandstone</a>
-            <a class="dropdown-item" href="#" data-href="assets/css/skins/bootstrapv4/bootstrapv4-simplex">Simplex</a>
-            <a class="dropdown-item" href="#" data-href="assets/css/skins/bootstrapv4/bootstrapv4-yeti">Yeti</a>
-          </div>
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#home">jQuery-Tabledit by BluesatKV</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Examples <span class="caret"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="themes">
+            <li><a href="#examples">Default</a></li>
+            <li class="divider"></li>
+            <li><a href="#examples1">Example #1</a></li>
+            <li><a href="#examples2">Example #2</a></li>
+            <li><a href="#examples3">Example #3</a></li>
+            <li><a href="#examples4">Example #4</a></li>
+            <li><a href="#examples5">Example #5</a></li>
+            <li><a href="#examples6">Example #6</a></li>
+          </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://github.com/BluesatKV/jquery-tabledit" target="_blank"><i class="fa fa-github fa-lg"></i></a>
+        <li><a href="#documentation">Documentation</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown" id="theme-button">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Theme &nbsp;<i class="fa fa-caret-down"></i></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#" data-href="">Default</a></li>
+            <li><a href="#" data-href="">Flatly</a></li>
+            <li><a href="#" data-href="">Sandstone</a></li>
+            <li><a href="#" data-href="">Yeti</a></li>
+          </ul>
         </li>
+        <li><a href="https://github.com/BluesatKV/jquery-tabledit" target="_blank"><i class="fa fa-github fa-lg"></i></a></li>
       </ul>
     </div>
+
   </div>
-</div>
+</nav>
 
 <script>
   $(document).ready(function () {
