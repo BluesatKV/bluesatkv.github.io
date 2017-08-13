@@ -35,19 +35,9 @@
 <script src="assets/js/custom.js"></script>
 <script>
   $(document).ready(function () {
-    /** @function Change theme
-     * @description Change theme on click by button
-     * @requires nothing
-     */
-
     $('#themes-select').click(function (event) {
-
-      // prevent the default anchor functionality
       event.preventDefault();
-
-      $('head link#theme-file').attr('href', $(this).attr('href'));
-
-      console.log("ready!");
+      alert($(this).attr('href'));
     });
 
   });
