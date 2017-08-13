@@ -27,6 +27,7 @@
           <li><a href="#tab1" data-toggle="tab">Html</a></li>
           <li><a href="#tab2" data-toggle="tab">JavaScript</a></li>
           <li><a href="#tab3" data-toggle="tab">PHP</a></li>
+          <li><a href="#tab4" data-toggle="tab">JSON</a></li>
         </ul>
         <!-- Tab panes -->
         <div class="tab-content">
@@ -155,6 +156,20 @@ if ($input['action'] === 'edit') {
 echo json_encode($input);
 
 ?&gt;
+</pre>
+          </div>
+          <div class="tab-pane fade" id="tab4">
+            <p>Response Json for DELETE first row with id = 1</p>
+            <pre class="prettyprint linenums">
+
+{"id":"1","action":"delete"}
+
+</pre>
+            <p>Response Json for EDIT first row with id = 1</p>
+            <pre class="prettyprint linenums">
+
+{"id":"1","nickname":"markcell","firstname":"Celso","lastname":"Marques","action":"edit"}
+
 </pre>
           </div>
         </div>
