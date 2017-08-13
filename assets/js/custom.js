@@ -36,7 +36,7 @@
 
   $('#theme-select a.dropdown-item').on('click', function(event) {
     event.preventDefault();
-    $('#theme-file').attr('href', $(this).attr('href'));
+    $('head link#theme-file').attr('href', $(this).attr('href'));
   });
 
 })(window.jQuery);
