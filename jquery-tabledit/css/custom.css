@@ -58,6 +58,13 @@ pre.prettyprint.mh200 {
   max-height: 200px;
 }
 
+pre.prettyprint.mh300 {
+  width: auto;
+  overflow: auto;
+  height: 300px;
+  max-height: 300px;
+}
+
 /* Generic Padding Helpers
 ------------------------------------
 */

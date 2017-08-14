@@ -16,9 +16,9 @@
   <div class="row">
     <div class="col-sm-12">
       <div class="page-header">
-        <h4>Example #4</h4>
+        <h4>Example #8</h4>
       </div>
-      <p class="help-block">Toolbar with delete button only and other name for row identifier attribute.</p>
+      <p class="help-block">Log all hooks and parameters to console.</p>
 
       <div class="m-t-20">
         <!-- Nav tabs -->
@@ -32,13 +32,13 @@
         <div class="tab-content">
           <div class="tab-pane fade in active" id="tab">
             <div class="table-responsive">
-              <table class="table table-striped table-bordered" id="example4">
+              <table class="table table-striped table-bordered" id="example8">
                 <thead>
                 <tr>
-                  <th class="col-sm-1">#</th>
-                  <th class="col-sm-4">Nickname</th>
-                  <th class="col-sm-3">Firstname</th>
-                  <th class="col-sm-4">Lastname</th>
+                  <th>#</th>
+                  <th>Nickname</th>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -66,13 +66,13 @@
           </div>
           <div class="tab-pane fade" id="tab1">
 <pre class="prettyprint linenums">
-&lt;table class="table table-striped table-bordered" id="example4"&gt;
+&lt;table class="table table-striped table-bordered" id="example8"&gt;
   &lt;thead&gt;
   &lt;tr&gt;
-    &lt;th class="col-sm-1"&gt;#&lt;/th&gt;
-    &lt;th class="col-sm-4"&gt;Nickname&lt;/th&gt;
-    &lt;th class="col-sm-3"&gt;Firstname&lt;/th&gt;
-    &lt;th class="col-sm-4"&gt;Lastname&lt;/th&gt;
+    &lt;th&gt;#&lt;/th&gt;
+    &lt;th&gt;Nickname&lt;/th&gt;
+    &lt;th&gt;Firstname&lt;/th&gt;
+    &lt;th&gt;Lastname&lt;/th&gt;
   &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -100,14 +100,34 @@
           </div>
           <div class="tab-pane fade" id="tab2">
 <pre class="prettyprint linenums">
-$('#example4').Tabledit({
+$('#example8').Tabledit({
   url: 'ajax/example.php',
-  rowIdentifier: 'data-id',
-  editButton: false,
-  restoreButton: false,
   columns: {
-      identifier: [0, 'id'],
-      editable: [[1, 'nickname'], [2, 'firstname'], [3, 'lastname']]
+    identifier: [0, 'id'],
+    editable: [[1, 'nickname'], [2, 'firstname'], [3, 'lastname', '{"1": "Black Widow", "2": "Captain America", "3": "Iron Man"}']]
+  },
+  onDraw: function() {
+    console.log('onDraw()');
+  },
+  onSuccess: function(data, textStatus, jqXHR) {
+    console.log('onSuccess(data, textStatus, jqXHR)');
+    console.log(data);
+    console.log(textStatus);
+    console.log(jqXHR);
+  },
+  onFail: function(jqXHR, textStatus, errorThrown) {
+    console.log('onFail(jqXHR, textStatus, errorThrown)');
+    console.log(jqXHR);
+    console.log(textStatus);
+    console.log(errorThrown);
+  },
+  onAlways: function() {
+    console.log('onAlways()');
+  },
+  onAjax: function(action, serialize) {
+    console.log('onAjax(action, serialize)');
+    console.log(action);
+    console.log(serialize);
   }
 });
 </pre>
@@ -168,16 +188,36 @@ echo json_encode($input);
 </div>
 
 <script>
-  $(document).ready(function() {
-    // Example #4
-    $('#example4').Tabledit({
+  $(document).ready(function () {
+    // Example #8
+    $('#example8').Tabledit({
       url: 'ajax/example.php',
-      rowIdentifier: 'data-id',
-      editButton: false,
-      restoreButton: false,
       columns: {
         identifier: [0, 'id'],
-        editable: [[1, 'nickname'], [2, 'firstname'], [3, 'lastname']]
+        editable: [[1, 'nickname'], [2, 'firstname'], [3, 'lastname', '{"1": "Black Widow", "2": "Captain America", "3": "Iron Man"}']]
+      },
+      onDraw: function () {
+        console.log('onDraw()');
+      },
+      onSuccess: function (data, textStatus, jqXHR) {
+        console.log('onSuccess(data, textStatus, jqXHR)');
+        console.log(data);
+        console.log(textStatus);
+        console.log(jqXHR);
+      },
+      onFail: function (jqXHR, textStatus, errorThrown) {
+        console.log('onFail(jqXHR, textStatus, errorThrown)');
+        console.log(jqXHR);
+        console.log(textStatus);
+        console.log(errorThrown);
+      },
+      onAlways: function () {
+        console.log('onAlways()');
+      },
+      onAjax: function (action, serialize) {
+        console.log('onAjax(action, serialize)');
+        console.log(action);
+        console.log(serialize);
       }
     });
 
