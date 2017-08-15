@@ -15,7 +15,9 @@
   }
 
   $(window).on('hashchange', function () {
-    loadContent(location.hash.slice(1));
+    loadContent(location.hash.slice(1),function(){
+      $.getScript("js/jquery.tabledit.min.js");
+    });
   });
 
   var url = window.location.href;
