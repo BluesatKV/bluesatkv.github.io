@@ -16,8 +16,14 @@
 }
 
 .carousel-caption {
-  bottom: 70px;
+  bottom: 35px;
   text-shadow: none;
+}
+
+.carousel-caption h3 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #000;
 }
 
 .container {
@@ -63,6 +69,28 @@ pre.prettyprint.mh300 {
   overflow: auto;
   height: 300px;
   max-height: 300px;
+}
+
+/* Carousel */
+
+.carousel-control.left {
+  background-image: -webkit-linear-gradient(left, rgba(39, 128, 227, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: -o-linear-gradient(left, rgba(39, 128, 227, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(39, 128, 227, 0.5)), to(rgba(0, 0, 0, 0.0001)));
+  background-image: linear-gradient(to right, rgba(39, 128, 227, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+
+.carousel-control.right {
+  left: auto;
+  right: 0;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(39, 128, 227, 0.5) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(39, 128, 227, 0.5) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.0001)), to(rgba(39, 128, 227, 0.5)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(39, 128, 227, 0.5) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
 }
 
 /* Generic Padding Helpers
@@ -866,6 +894,7 @@ pre.prettyprint.mh300 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 .s2-docs-sidebar .nav > li > a {
   margin-left: -1px;
   display: block;
@@ -919,7 +948,7 @@ pre.prettyprint.mh300 {
   font-weight: 400;
 }
 
-.s2-docs-sidebar .s2-docs-sidenav .sidebar-header{
+.s2-docs-sidebar .s2-docs-sidenav .sidebar-header {
   padding: 0 15px;
   font-weight: 700;
 }
