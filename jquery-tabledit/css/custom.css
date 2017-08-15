@@ -18,12 +18,16 @@
 .carousel-caption {
   bottom: 35px;
   text-shadow: none;
+  color: #000;
 }
 
 .carousel-caption h3 {
   font-size: 25px;
   font-weight: 700;
-  color: #000;
+}
+.carousel-caption .caption-text {
+  padding: 10px;
+  background: #bbd7f6;
 }
 
 .container {
