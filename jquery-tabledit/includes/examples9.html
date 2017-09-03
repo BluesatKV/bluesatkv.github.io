@@ -261,13 +261,13 @@ $ID = $_POST['ID'];
 $result = /*  Your code for select data from DB */
 
 while ($row = $result->fetch_assoc()) {
-  $edata .= '<tr>
-                 <td>' . $row["id"] . '</td>
-                 <td>' . $row["make"] . '</td>
-                 <td>' . $row["year"] . '</td>
-                 <td>' . $row["model"] . '</td>
-                 <td>' . $row["platform"] . '</td>
-              </tr>
+  $edata .= '&lt;tr&gt;
+                 &lt;td&gt;' . $row["id"] . '&lt;/td&gt;
+                 &lt;td&gt;' . $row["make"] . '&lt;/td&gt;
+                 &lt;td&gt;' . $row["year"] . '&lt;/td&gt;
+                 &lt;td&gt;' . $row["model"] . '&lt;/td&gt;
+                 &lt;td&gt;' . $row["platform"] . '&lt;/td&gt;
+              &lt;/tr&gt;
              ';
 }
 
