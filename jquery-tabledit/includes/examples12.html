@@ -31,120 +31,98 @@
         <!-- Tab panes -->
         <div class="tab-content">
           <div class="tab-pane fade in active" id="tab">
-            <div class="row">
-              <div class="col-md-12 m-b-20">
-                <input type="button" value="Add row" id="addRow" class="btn btn-info pull-right">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-12">
-                <div class="table-responsive">
-                  <table class="table table-striped table-bordered" id="example12">
-                    <thead>
-                    <tr>
-                      <th>#</th>
-                      <th>Make</th>
-                      <th>Model</th>
-                      <th>Year</th>
-                      <th>Platform</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>BMW</td>
-                      <td>5-Series</td>
-                      <td>2018</td>
-                      <td>G30</td>
-                    </tr>
-                    <tr>
-                      <td>2</td>
-                      <td>BMW</td>
-                      <td>6-Series, M6</td>
-                      <td>2009</td>
-                      <td>F12/F13</td>
-                    </tr>
-                    <tr>
-                      <td>3</td>
-                      <td>Ford</td>
-                      <td>Mustang</td>
-                      <td>2015</td>
-                      <td>(6th gen)</td>
-                    </tr>
-                    <tr>
-                      <td>4</td>
-                      <td>Ford</td>
-                      <td>Explorer</td>
-                      <td>2017</td>
-                      <td>(5th gen)</td>
-                    </tr>
-                    <tr class="hidden">
-                      <td>5</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
+            <table class="table table-striped table-bordered" id="example12">
+              <thead>
+              <tr>
+                <th>#</th>
+                <th>Make</th>
+                <th>Model</th>
+                <th>Year</th>
+                <th>Platform</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>1</td>
+                <td>BMW</td>
+                <td>5-Series</td>
+                <td>2018</td>
+                <td>G30</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>BMW</td>
+                <td>6-Series, M6</td>
+                <td>2009</td>
+                <td>F12/F13</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Ford</td>
+                <td>Mustang</td>
+                <td>2015</td>
+                <td>(6th gen)</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Ford</td>
+                <td>Explorer</td>
+                <td>2017</td>
+                <td>(5th gen)</td>
+              </tr>
+              <tr class="hidden">
+                <td>5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              </tbody>
+            </table>
           </div>
           <div class="tab-pane fade" id="tab1">
 <pre class="prettyprint linenums">
-&lt;div class="row"&gt;
-  &lt;div class="col-md-12 m-b-20"&gt;
-    &lt;input type="button" value="Add row" id="addRow" class="btn btn-info pull-right"&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="row"&gt;
-  &lt;div class="col-md-12"&gt;
-    &lt;div class="table-responsive"&gt;
-      &lt;table class="table table-striped table-bordered" id="example12"&gt;
-        &lt;thead&gt;
-        &lt;tr&gt;
-          &lt;th&gt;#&lt;/th&gt;
-          &lt;th&gt;Make&lt;/th&gt;
-          &lt;th&gt;Model&lt;/th&gt;
-          &lt;th&gt;Year&lt;/th&gt;
-          &lt;th&gt;Platform&lt;/th&gt;
-        &lt;/tr&gt;
-        &lt;/thead&gt;
-        &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td&gt;1&lt;/td&gt;
-          &lt;td&gt;BMW&lt;/td&gt;
-          &lt;td&gt;5-Series&lt;/td&gt;
-          &lt;td&gt;2018&lt;/td&gt;
-          &lt;td&gt;G30&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td&gt;2&lt;/td&gt;
-          &lt;td&gt;BMW&lt;/td&gt;
-          &lt;td&gt;6-Series, M6&lt;/td&gt;
-          &lt;td&gt;2009&lt;/td&gt;
-          &lt;td&gt;F12/F13&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td&gt;3&lt;/td&gt;
-          &lt;td&gt;Ford&lt;/td&gt;
-          &lt;td&gt;Mustang&lt;/td&gt;
-          &lt;td&gt;2015&lt;/td&gt;
-          &lt;td&gt;(6th gen)&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;tr&gt;
-          &lt;td&gt;4&lt;/td&gt;
-          &lt;td&gt;Ford&lt;/td&gt;
-          &lt;td&gt;Explorer&lt;/td&gt;
-          &lt;td&gt;2017&lt;/td&gt;
-          &lt;td&gt;(5th gen)&lt;/td&gt;
-        &lt;/tr&gt;
-        &lt;/tbody&gt;
-      &lt;/table&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+&lt;table class="table table-striped table-bordered" id="example12"&gt;
+  &lt;thead&gt;
+  &lt;tr&gt;
+    &lt;th&gt;#&lt;/th&gt;
+    &lt;th&gt;Make&lt;/th&gt;
+    &lt;th&gt;Model&lt;/th&gt;
+    &lt;th&gt;Year&lt;/th&gt;
+    &lt;th&gt;Platform&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;BMW&lt;/td&gt;
+    &lt;td&gt;5-Series&lt;/td&gt;
+    &lt;td&gt;2018&lt;/td&gt;
+    &lt;td&gt;G30&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;BMW&lt;/td&gt;
+    &lt;td&gt;6-Series, M6&lt;/td&gt;
+    &lt;td&gt;2009&lt;/td&gt;
+    &lt;td&gt;F12/F13&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;Ford&lt;/td&gt;
+    &lt;td&gt;Mustang&lt;/td&gt;
+    &lt;td&gt;2015&lt;/td&gt;
+    &lt;td&gt;(6th gen)&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;Ford&lt;/td&gt;
+    &lt;td&gt;Explorer&lt;/td&gt;
+    &lt;td&gt;2017&lt;/td&gt;
+    &lt;td&gt;(5th gen)&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 </pre>
           </div>
           <div class="tab-pane fade" id="tab2">
